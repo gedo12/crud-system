@@ -1,0 +1,117 @@
+
+#home{
+    width: 100%;
+    min-height: 100vh;
+    background-image:url(../img/pexels-eberhard-grossgasteiger-2310713.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+#home .container .caption-home {
+    text-align: center;
+}
+#home .container .caption-home h1 {
+    position: relative !important;
+    font-family: 'Pacifico', cursive;
+    z-index: 2;
+    display: inline-block;
+}
+#home .container .caption-home h1::after{
+ content: "";
+ width: 100%;
+ height: 25px;
+ position: absolute;
+ top: 25px;
+ left: 0;
+ background:linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+ z-index: -1;
+ transition: all 1s;
+}
+#home .container .caption-home h1:hover::after {
+    top: 5px;
+    height: 100%;
+    
+}
+#home .container .caption { 
+    padding-top: 20px;
+    margin-block: 20px;
+    border-top: 2px dashed black;
+}
+#home .container .caption h2 { 
+    background:linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    background-clip: text;
+    color: transparent;
+    
+}
+
+.icon {
+    font-size: 25px;
+    background:linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    background-clip: text;
+    color: transparent;
+}
+.ico {
+    font-size: 25px;
+    background:linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    background-clip: text;
+    color: transparent;
+}
+.w-10{
+    margin: 0;
+    width: 200px;
+
+}
+.button-caption {
+    padding-bottom: 50px;
+    border-bottom: 2px dashed black;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #F15F5D;
+}
+.circle1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FEBE2E;
+}
+.circle2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4DB748;
+}
+.ic {
+    color: #BB4120;
+}
+#alertUser{
+    background-color: rgba(188, 12, 241, 0.244);
+}
+table { 
+    background-color: #4DB748 !important;
+}
+h1::selection{
+    background-color: tomato;
+}
+h2::selection{
+    background-color: tomato;
+}
+th::selection{
+    background-color: tomato;
+}
+p::selection{
+    background-color: tomato;
+}
+label::selection{
+    background-color: tomato;
+}
+input{
+    border: none;
+    border-radius: 10px;
+}
+input:focus {
+    outline: none;
+    border: 1px solid rgba(188, 12, 241, 0.244) ;
+    box-shadow: 0 0 0 0.25rem  rgba(188, 12, 241, 0.244);
+}

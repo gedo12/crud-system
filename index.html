@@ -1,0 +1,91 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Mark</title>
+    <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="home">
+    
+    <div class="container">
+        <div class="caption-home">
+            <h1 class="text-center ">Bookmarker</h1>
+            
+        </div>
+        
+        <div class="caption d-flex justify-content-center align-items-center">
+            <i class=" icon  pe-3  fa-solid fa-bookmark"></i>
+            <h2 class="text-center"> Bookmark your  favorite sites</h2>
+            <i class=" ico ps-3 fa-solid fa-bookmark"></i>
+            
+        </div>
+        
+      
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <label for="SiteName"> <i class="fa-solid fa-book pe-2"></i> Site Name</label>
+                    <input oninput="validName()" class="w-100 p-2" type="text" id="SiteName" placeholder="Bookmark Name">
+                </div>
+                <div class="my-3">
+                    <label for="SiteURL"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                    <input oninput="isValidURL()" class="w-100 p-2" type="url" id="SiteURL" placeholder="Website URL">
+                </div>
+                <div id="alertUser" class="  w-50 mx-auto p-3 d-none">
+                    <div class="parent d-flex justify-content-between my-3 ">
+                        <div class="child d-flex">
+                            <div class="circle me-2 "></div>
+                            <div class="circle1 me-2"></div>
+                            <div class="circle2 me-2"></div>
+                        </div>
+                        <div>
+                            <button onclick="removeAlert()"><i class="fa-solid fa-xmark "></i></button>
+                        </div> 
+                    </div>
+                    <div >
+                        <h2>Site Name or Url is not valid, Please follow the rules below :</h2>
+                    </div>
+                    <div>
+                        <p class="fs-5"> <i class="fa-solid fa-arrow-right-from-bracket ic"></i>  Site name must contain at least 3 characters</p>
+                        <p class="fs-5"> <i class="fa-solid fa-arrow-right-from-bracket ic"></i>   Site URL must be a valid one</p>
+                    </div>
+                </div>
+                <div class="text-center button-caption">
+                    <button onclick="addName()" class="w-10 btn btn-danger">Sumbit</button> 
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="table my-3 text-center table-dark">
+                        <thead>
+                            <tr class="  fw-bold">
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                          
+                            </tr>
+                        </thead>
+                        <tbody id="tBody">
+                        
+                        </tbody>
+                    </table>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+   
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
